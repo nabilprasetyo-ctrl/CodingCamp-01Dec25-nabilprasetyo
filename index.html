@@ -43,8 +43,8 @@
 
         <!-- Our Profile Page -->
         <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Yama Company</h2>
-            <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+            <h2 class="text-xl font-bold">About Nabil Company</h2>
+            <p class="mt-2">Nabil Company is dedicated to providing top-notch services in various domains.</p>
         </section>
 
         <hr>
@@ -53,35 +53,123 @@
         <section id="portfolio-page" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold">Our Portfolio</h2>
             <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+            
         </section>
 
         <hr>
 
         <!-- Message Us Page -->
-        <section id="message-us-page" class="min-h-[500px] mx-8">
-            <header>
-                <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
-                    promptly.</p>
-            </header>
+        <style>
+    .message-container {
+        width: 90%;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        font-family: Arial, sans-serif;
+    }
 
-            <form>
-                <div class="mb-4">
-                    <label class="block mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
-                        required></textarea>
-                </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
-            </form>
-        </section>
+    .message-box, .result-box {
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .message-box h2 {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 90px;
+        resize: none;
+    }
+
+    .submit-btn {
+        margin-top: 18px;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        background: #4A8FF0;
+        color: white;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #1f6fe0;
+    }
+
+    .result-box h3 {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+    }
+
+    .result-content {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+</style>
+
+<div class="message-container">
+
+    <!-- Form -->
+    <div class="message-box">
+        <h2>Message Us</h2>
+        <form>
+            <label>Nama</label>
+            <input type="text" placeholder="Masukkan nama lengkap">
+
+            <label>Tanggal Lahir</label>
+            <input type="date">
+
+            <label>Jenis Kelamin</label>
+            <select>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+            </select>
+
+            <label>Pesan</label>
+            <textarea placeholder="Tulis pesan Anda..."></textarea>
+
+            <button class="submit-btn">Kirim</button>
+        </form>
+    </div>
+
+    <!-- Hasil -->
+    <div class="result-box">
+        <h3>Message Preview</h3>
+        <div class="result-content">
+            <p><b>Current Time:</b> Fri, Nov 17 2025 11:27:28 GMT+0100</p>
+            <p><b>Nama:</b> Nabil Prasetyo</p>
+            <p><b>Tanggal Lahir:</b> 03/02/2003</p>
+            <p><b>Jenis Kelamin:</b> Laki-laki</p>
+            <p><b>Pesan:</b> Latar Belajar Buat Website</p>
+        </div>
+    </div>
+
+</div>
+
+        
 
     </main>
     

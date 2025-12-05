@@ -12,3 +12,40 @@
     justify-content: space-between;
     align-items: center;
 }
+
+/* ==== TAMBAHAN STYLE ==== */
+
+body {
+  background: linear-gradient(135deg, #d0e7ff, #fbe7ff);
+  background-attachment: fixed;
+}
+
+/* Container upload */
+.upload-section {
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 480px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#previewBox {
+  margin-top: 15px;
+  border: 2px dashed #aaa;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fafafa;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#previewBox img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
